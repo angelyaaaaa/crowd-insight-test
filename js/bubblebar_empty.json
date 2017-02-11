@@ -1,0 +1,11 @@
+{
+bar: [ ],
+hasInfo: true,
+sentiment: [
+99999,
+99999,
+99999
+],
+size: 0.5,
+y: 0
+}

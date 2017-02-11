@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="description" content="description"/>
+<meta name="keywords" content="keywords"/> 
+<meta name="author" content="author"/>
+<title>創客平台-商情分析</title>
+<link rel="stylesheet" type="text/css" href="css/crowdinsight.css" media="screen"/>
+<link rel="stylesheet" type="text/css" href="css/daterangepicker.css" media="screen"/>
+<link rel="stylesheet" type="text/css" href="css/font_awesome.min.css" media="screen"/>
+<link rel="stylesheet" type="text/css" href="css/jquery.comiseo.daterangepicker.css" media="screen"/>
+<link rel="stylesheet" type="text/css" href="css/swiper.min.css" media="screen"/>
+<link rel="stylesheet" type="text/css" href="css/chart.css" media="screen"/>
+</head>
+<body>
+<script type="text/javascript" src="js/jQuery.min.2.1.4.js"></script>
+<script type="text/javascript" src="js/jQuery_tmpl.js"></script>
+
+<script type="text/javascript" src="js/moment.min.js"></script>
+<script type="text/javascript" src="js/swiper.js"></script>
+<script type="text/javascript" src="js/d3.js"></script>
+
+<script type="text/javascript" src="js/heatmap.js"></script>
+<script type="text/javascript" src="js/bubble.js"></script>
+<script type="text/javascript" src="js/person_graph.js"></script>
+<script type="text/javascript" src="js/rank.js"></script>
+<script type="text/javascript" src="js/d3.layout.cloud.js"></script>
+<script type="text/javascript" src="js/wordcloud.js"></script>
+<script type="text/javascript" src="js/daterangepicker.js"></script>
+<script type="text/javascript" src="js/jquery.comiseo.daterangepicker.js"></script>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script type="text/javascript" src="js/myCharts.js"></script>
+<script type="text/javascript" src="js/localData.js"></script>
+<script type="text/javascript" src="js/crowdinsight.js"></script>
+
+<!--
+<script type="text/javascript" src="js/zSample.js"></script>
+-->
+<script type="text/javascript">
+$(function(){
+	
+});
+</script>
+
+	<h1>商情分析</h1>
+	<hr/>
+	
+	<div class="row">			
+		<label>圖表類型：</label>
+		<select class="form_control form_control_inline" id="chart_type">
+			<option value="0">情緒分析</option>
+			<option value="1">來源分析</option>
+			<option value="2">熱門關鍵</option>
+			<option value="3">意見領袖</option>
+			<option value="4">熱門排行</option>
+			<option value="5">*我的情緒*</option>			
+		</select>
+	</div>
+	<div class="row">			
+		<label>時間區間：</label>
+		<input type="text" class="form_control form_control_inline" id="date_range_picker1" value="2016-03-14 - 2016-03-20">
+		<a href="#" class="date_type">日</a>
+		<a href="#" class="date_type">週</a>
+		<a href="#" class="date_type">月</a>
+		<a href="#" class="date_type">季</a>
+	</div>
+	
+	<div class="row date_item_list swiper-container" >
+		<div class="swiper-wrapper">
+			<div class="swiper-slide swiper-slide-active" style="width: 696px;">	
+				<a href="#" class="date_item">2016-03-10</a>
+				<a href="#" class="date_item">2016-03-11</a>
+				<a href="#" class="date_item">2016-03-12</a>
+				<a href="#" class="date_item">2016-03-13</a>
+				<a href="#" class="date_item">2016-03-14</a>
+				<a href="#" class="date_item">2016-03-15</a>
+				<a href="#" class="date_item">2016-03-16</a>
+			</div>	
+		</div>	
+		<div class="swiper-button-prev swiper-button-disabled"></div>
+		<div class="swiper-button-next swiper-button-disabled"></div>
+	</div>	
+	<hr/>
+	<div class="row">	
+		<div id="chart_container"></div>
+	<div>
+</body>
+</html>
